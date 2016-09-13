@@ -199,6 +199,7 @@
 			this.removeLoading();
 
 			if (!_.isUndefined(errorMessage) && errorMessage !== null) {
+				albumPath = '';
 				message += '<h2>' + t('gallery',
 						'Album cannot be shown') + '</h2>';
 				message += '<p>' + errorMessage + '</p>';
